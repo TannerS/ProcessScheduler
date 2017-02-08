@@ -1,11 +1,17 @@
-import sys
+# import sys
 from FCFS import FCFS
+from SF import  SF
 
 
 def main(filename):
     print('Running First-come, first-served scheduler')
-    fcfs = FCFS(filename)
-    fcfs.execute()
+    # fcfs = FCFS(filename)
+    # fcfs.execute()
+
+    fs = SF(filename)
+    fs.execute()
+
+
 
 
 if __name__ == '__main__':
